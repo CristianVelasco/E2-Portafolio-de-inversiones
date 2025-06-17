@@ -17,7 +17,7 @@ Se desarrolló un flujo completo **ETL (Extract, Transform, Load)** usando progr
 El propósito de este proyecto es generar un **portafolio de inversión eficiente**, basándonos en datos históricos de precios de activos financieros. Para ello:
 
 * 🔗 Se consultaron datos mediante **APIs públicas de mercado** (como Yahoo Finance, entre otras).
-* 🧠 Se construyó un pipeline **ETL avanzado** que:
+* 🧠 Se construyó un pipeline **ETL básico** que:
 
   * **Extrae** información histórica de precios.
   * **Transforma** los datos para calcular rendimientos, varianzas, covarianzas y simulaciones.
@@ -39,7 +39,7 @@ El propósito de este proyecto es generar un **portafolio de inversión eficient
 
 ```plaintext
 ┌────────────┐       ┌──────────────┐       ┌──────────────┐
-│ Extracción │──────▶│ Transformación │──────▶│     Carga     │
+│ Extracción │─────▶│ Transformación│ ──▶  │     Carga    │
 └────────────┘       └──────────────┘       └──────────────┘
      ▲ API               ▲ Cálculos POO         ▲ Visualización
      │                   │ Financiera           │ & Análisis
